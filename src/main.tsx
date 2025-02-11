@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import NavBar from './Components/ui/Navbar';
 import SignUp from './Components/Login/SignUp';
 import HospitalHomeScreen from './Components/Hospital/HospitalHomePage';
+import HospitalNavbar from './Components/Hospital/HospitalNavbar';
 
 createRoot(document.getElementById('root')!).render(
   <>
@@ -18,7 +19,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path = "/HomeScreen" element = {<><NavBar/><HomeScreen/></>} ></Route>
             <Route path = '/Login' element = {<Login/>}></Route>
             <Route path = '/SignUp' element={<SignUp/>}></Route>
-            <Route path = '/Hospital/HomeScreen' element = {<HospitalHomeScreen/>}></Route>
+            <Route path = '/Hospital/HomeScreen' element = {<><HospitalNavbar/><HospitalHomeScreen/></>}></Route>
           </Routes>
         </Router>
     </React.StrictMode>

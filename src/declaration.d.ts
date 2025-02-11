@@ -1,5 +1,10 @@
 // src/declaration.d.ts
-declare module '*.gif' {
+declare module '*' {
     const value: string;
     export default value;
   }
+
+// declare module '*.jpg' {
+//   const value: string;
+//   export default value;
+// }
